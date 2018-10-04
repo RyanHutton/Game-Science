@@ -32,6 +32,15 @@ public class CameraController : MonoBehaviour {
         {
             pos.x -= panSpeed * Time.deltaTime;
         }
+        if (Input.GetKey("q"))
+        {
+            pos.y -= zoomSpeed * 1f * Time.deltaTime;
+        }
+        if (Input.GetKey("e"))
+        {
+            pos.y += zoomSpeed * 1f * Time.deltaTime;
+        }
+
         //this controls the zoom
         float zoom = Input.GetAxis("Mouse ScrollWheel");
         pos.y -= zoom * zoomSpeed * 20f * Time.deltaTime;
