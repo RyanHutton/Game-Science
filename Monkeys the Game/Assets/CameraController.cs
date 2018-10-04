@@ -9,6 +9,8 @@ public class CameraController : MonoBehaviour {
     public float zoomSpeed = 20f;
     public float zoomLimitMin = 20f; //height in Y for how far in we can zoom before clamp
     public float zoomLimitMax = 120f; //height in Y for how far out we can zoom
+   
+    //public Camera cam; //possibly will be used for more dynamic pan limits
 
     // Update is called once per frame
     void Update () {
@@ -40,5 +42,5 @@ public class CameraController : MonoBehaviour {
         pos.z = Mathf.Clamp(pos.z, panLimitY.x, panLimitY.y);//use y because we used vector2, so this y is actually our z
 
         transform.position = pos;
-	}
+    }
 }
