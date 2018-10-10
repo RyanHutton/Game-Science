@@ -3,10 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class PlayerController : MonoBehaviour {
+public class EnemyController : MonoBehaviour {
 
     public Camera cam;
 	public NavMeshAgent agent;
+    public int aggression;
+    public int gather;
+    public int strength;
+    public int fitness;
 	// Update is called once per frame, expensive, but just demo
 	void Update () {
 		if (Input.GetMouseButtonDown(0))

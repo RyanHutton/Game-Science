@@ -115,6 +115,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 0}
   agent: {fileID: 195641940736088220}
+  aggression: 0
+  gather: 0
+  strength: 0
+  fitness: 0
 --- !u!136 &136433237829841200
 CapsuleCollider:
   m_ObjectHideFlags: 1

@@ -19,7 +19,7 @@ public class TribeController : MonoBehaviour {
 
 		if (numOfGatherers + numOfSoldiers < population)
         {
-            AllocateUnits();
+            //AllocateUnits();
         }
 
         if (Input.GetKey("space")) //implement cycles, use timers?
