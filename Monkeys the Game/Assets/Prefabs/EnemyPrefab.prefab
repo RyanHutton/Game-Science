@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 54063396712221616}
   - component: {fileID: 195641940736088220}
   - component: {fileID: 114494760273807654}
-  m_Layer: 10
+  m_Layer: 2
   m_Name: EnemyPrefab
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -114,6 +114,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 0}
+  target: {fileID: 0}
   agent: {fileID: 195641940736088220}
   aggression: 0
   gather: 0

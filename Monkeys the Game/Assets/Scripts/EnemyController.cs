@@ -11,18 +11,50 @@ public class EnemyController : MonoBehaviour {
     public int gather;
     public int strength;
     public int fitness;
-	// Update is called once per frame, expensive, but just demo
-	void Update () {
-		if (Input.GetMouseButtonDown(0))
+    public GameObject target;
+    public GameObject hut;
+
+    // Update is called once per frame, expensive, but just demo
+    void Update () {
+		if (target != null)
         {
-            Ray ray =  cam.ScreenPointToRay(Input.mousePosition);//should use viewport, but is demo
-            RaycastHit hit;
-            if (Physics.Raycast(ray, out hit))
+            agent.SetDestination(target.transform.position);
+            float distance = Vector3.Distance(transform.position, target.transform.position);
+            if (distance < 2f)
             {
-                agent.SetDestination(hit.point);
+                GetComponent<Material>().color = Color.yellow;//attack placeholder
             }
+        }
+        else
+        {
+            float distance = Vector3.Distance(transform.position, hut.transform.position);
+            if (distance < 10f)
+            {
+                //steal bananas
+            }
+            else
+            {
+                agent.SetDestination(hut.transform.position);
 
-
+            }
         }
 	}
+
+    void OnTriggerEnter(Collider col)
+    {
+        if (target == null && col.gameObject.tag == "Monkey")//
+        {
+            SetTarget(col.gameObject);
+        }
+    }
+
+    void SetTarget(GameObject newTarget)
+    {
+        target = newTarget;
+    }
+
+    void RemoveTarget()
+    {
+        target = null;
+    }
 }

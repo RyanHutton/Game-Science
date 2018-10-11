@@ -6,7 +6,7 @@ using UnityEngine.AI;
 public class PlayerController : MonoBehaviour {
 
     public Camera cam;
-    public GameObject focus;
+    public GameObject target;
 	public NavMeshAgent agent;
     public int aggression;
     public int gather;
@@ -25,13 +25,13 @@ public class PlayerController : MonoBehaviour {
         }
 	}
 
-    void SetFocus(GameObject newFocus)
+    void SetTarget(GameObject newTarget)
     {
-        focus = newFocus;
+        target = newTarget;
     }
 
-    void RemoveFocus()
+    void RemoveTarget()
     {
-        focus = null;
+        target = null;
     }
 }
