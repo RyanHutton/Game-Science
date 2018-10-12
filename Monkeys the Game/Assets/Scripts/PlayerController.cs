@@ -8,12 +8,19 @@ public class PlayerController : MonoBehaviour {
     public Camera cam;
     public GameObject target;
 	public NavMeshAgent agent;
-    public int aggression;
-    public int gather;
-    public int strength;
-    public int fitness;
+
+    UnitStats myStats;
+
 	// Update is called once per frame, expensive, but just demo
 	void Update () {
+        myStats = GetComponent<UnitStats>();
+
+        if (myStats.currentHealth <= 0)
+        {
+
+            Destroy(gameObject);//die
+        }
+
 		if (Input.GetMouseButtonDown(0))
         {
             Ray ray =  cam.ScreenPointToRay(Input.mousePosition);//should use viewport, but is demo
