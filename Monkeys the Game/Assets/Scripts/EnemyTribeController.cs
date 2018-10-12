@@ -20,6 +20,11 @@ public class EnemyTribeController : MonoBehaviour {
         {
             SpawnUnits();
         }
+
+        if (Input.GetKey("space"))
+        {
+            SpawnUnits();
+        }
 	}
 
     void SpawnUnits()
