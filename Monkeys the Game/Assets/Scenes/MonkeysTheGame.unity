@@ -561,7 +561,7 @@ GameObject:
   - component: {fileID: 1047189306}
   - component: {fileID: 1047189307}
   m_Layer: 0
-  m_Name: Pivot
+  m_Name: InteractZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -590,7 +590,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 7
+  m_Radius: 8
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1065199876
 GameObject:
@@ -882,7 +882,7 @@ GameObject:
   - component: {fileID: 1690287737}
   - component: {fileID: 1690287738}
   m_Layer: 0
-  m_Name: InteractZone
+  m_Name: BoxZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

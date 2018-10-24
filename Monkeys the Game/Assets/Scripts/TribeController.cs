@@ -7,6 +7,7 @@ public class TribeController : MonoBehaviour {
     public int population;
     public int numOfGatherers;
     public int numOfSoldiers;
+    public bool underAttack;
     public GameObject monkey;
 
 	// Use this for initialization
@@ -45,5 +46,18 @@ public class TribeController : MonoBehaviour {
         GameObject unit = (GameObject)Instantiate(monkey, spawnPoint, transform.rotation);
         population++;
 
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (underAttack == false)
+        {
+            underAttack = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        underAttack = false;
     }
 }
