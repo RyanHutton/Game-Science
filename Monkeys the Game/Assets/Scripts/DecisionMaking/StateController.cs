@@ -8,13 +8,12 @@ public class StateController : MonoBehaviour
 {
 
     public State currentState;
-    public UnitStats enemyStats;
+    public EnemyStats enemyStats;
     public Transform eyes;
     public State remainState;
 
 
     [HideInInspector] public NavMeshAgent navMeshAgent;
-    //[HideInInspector] public Complete.TankShooting tankShooting;
     [HideInInspector] public List<Transform> wayPointList;
     [HideInInspector] public int nextWayPoint;
     [HideInInspector] public Transform chaseTarget;
