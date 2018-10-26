@@ -9,9 +9,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3f27cc92d6afb4c158c78001fa727c49, type: 3}
-  m_Name: Patrol Chaser
+  m_Name: Patrol Scanner
   m_EditorClassIdentifier: 
   actions:
   - {fileID: 11400000, guid: 5a0c0d72af9fc419b921d505edfb84b5, type: 2}
-  transitions: []
-  sceneGizmoColor: {r: 0.11111466, g: 0.9245283, b: 0.06541473, a: 1}
+  transitions:
+  - decision: {fileID: 11400000, guid: 3ad4c83f02c864bbabc76952b7b6e556, type: 2}
+    trueState: {fileID: 11400000, guid: 4df30e52319c8463bbb582a2ed2fbbca, type: 2}
+    falseState: {fileID: 11400000, guid: 9a86eb31954e64807ba0ca38b34f76bd, type: 2}
+  sceneGizmoColor: {r: 0.14422639, g: 0.9433962, b: 0.04004982, a: 1}

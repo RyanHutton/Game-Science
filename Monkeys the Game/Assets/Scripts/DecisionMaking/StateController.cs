@@ -13,7 +13,6 @@ public class StateController : MonoBehaviour
     public State remainState;
     public List<Transform> wayPoints;
 
-
      public NavMeshAgent navMeshAgent;
     [HideInInspector] public List<Transform> wayPointList;
     [HideInInspector] public int nextWayPoint;

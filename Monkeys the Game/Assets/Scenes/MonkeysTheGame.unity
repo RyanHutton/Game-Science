@@ -219,7 +219,7 @@ MonoBehaviour:
   currentState: {fileID: 11400000, guid: 7a295d14ad51e4555bf6d9fbd5712237, type: 2}
   enemyStats: {fileID: 11400000, guid: 66f38c5b733f64e769a719b97b18299e, type: 2}
   eyes: {fileID: 0}
-  remainState: {fileID: 0}
+  remainState: {fileID: 11400000, guid: 9a86eb31954e64807ba0ca38b34f76bd, type: 2}
   wayPoints:
   - {fileID: 2057658495}
   - {fileID: 1219304357}
@@ -248,6 +248,142 @@ MonoBehaviour:
   cam: {fileID: 534669904}
   target: {fileID: 0}
   agent: {fileID: 223379186}
+--- !u!1001 &234004966
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4622917670099722, guid: ad28c64829004fa4487aa67c7c6e0e5e, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 21.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4622917670099722, guid: ad28c64829004fa4487aa67c7c6e0e5e, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 3.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4622917670099722, guid: ad28c64829004fa4487aa67c7c6e0e5e, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 23.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4622917670099722, guid: ad28c64829004fa4487aa67c7c6e0e5e, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4622917670099722, guid: ad28c64829004fa4487aa67c7c6e0e5e, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4622917670099722, guid: ad28c64829004fa4487aa67c7c6e0e5e, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4622917670099722, guid: ad28c64829004fa4487aa67c7c6e0e5e, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4622917670099722, guid: ad28c64829004fa4487aa67c7c6e0e5e, type: 2}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1085963635918442, guid: ad28c64829004fa4487aa67c7c6e0e5e, type: 2}
+      propertyPath: m_Name
+      value: MonkeyPrefab (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114494760273807654, guid: ad28c64829004fa4487aa67c7c6e0e5e,
+        type: 2}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 534669904}
+    - target: {fileID: 136433237829841200, guid: ad28c64829004fa4487aa67c7c6e0e5e,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 136433237829841200, guid: ad28c64829004fa4487aa67c7c6e0e5e,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 136433237829841200, guid: ad28c64829004fa4487aa67c7c6e0e5e,
+        type: 2}
+      propertyPath: m_Radius
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114494760273807654, guid: ad28c64829004fa4487aa67c7c6e0e5e, type: 2}
+  m_SourcePrefab: {fileID: 100100000, guid: ad28c64829004fa4487aa67c7c6e0e5e, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1 &234004967 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1085963635918442, guid: ad28c64829004fa4487aa67c7c6e0e5e,
+    type: 2}
+  m_PrefabInternal: {fileID: 234004966}
+--- !u!195 &234004968 stripped
+NavMeshAgent:
+  m_CorrespondingSourceObject: {fileID: 195641940736088220, guid: ad28c64829004fa4487aa67c7c6e0e5e,
+    type: 2}
+  m_PrefabInternal: {fileID: 234004966}
+--- !u!114 &234004969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 234004967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34d910df58df62e42aa9208e4a910063, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 534669904}
+  target: {fileID: 0}
+  agent: {fileID: 234004968}
+--- !u!114 &234004970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 234004967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7eec91b43c64c4ec3aa05c1752041fda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentState: {fileID: 11400000, guid: d7eaaa6c29f1248d886e5bb0521fa3a7, type: 2}
+  enemyStats: {fileID: 11400000, guid: 66f38c5b733f64e769a719b97b18299e, type: 2}
+  eyes: {fileID: 0}
+  remainState: {fileID: 11400000, guid: 9a86eb31954e64807ba0ca38b34f76bd, type: 2}
+  wayPoints:
+  - {fileID: 2057658495}
+  - {fileID: 1219304357}
+  - {fileID: 1690895826}
+  navMeshAgent: {fileID: 234004968}
+  wayPointList: []
+  nextWayPoint: 0
+  chaseTarget: {fileID: 0}
+  stateTimeElapsed: 0
+--- !u!114 &234004971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 234004967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 199f3a0159987f9449dd10438f990e23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  strength:
+    baseValue: 5
+  maxHealth:
+    baseValue: 100
+  aggression:
+    baseValue: 50
+  gather:
+    baseValue: 50
+  food:
+    baseValue: 0
 --- !u!1 &534669902
 GameObject:
   m_ObjectHideFlags: 0
@@ -938,7 +1074,7 @@ MonoBehaviour:
   wayPoints:
   - {fileID: 1690895826}
   - {fileID: 1021442495}
-  navMeshAgent: {fileID: 0}
+  navMeshAgent: {fileID: 1670527264}
   wayPointList: []
   nextWayPoint: 0
   chaseTarget: {fileID: 0}
