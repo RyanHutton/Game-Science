@@ -220,6 +220,10 @@ MonoBehaviour:
   enemyStats: {fileID: 11400000, guid: 66f38c5b733f64e769a719b97b18299e, type: 2}
   eyes: {fileID: 0}
   remainState: {fileID: 0}
+  wayPoints:
+  - {fileID: 2057658495}
+  - {fileID: 1219304357}
+  - {fileID: 1690895826}
   navMeshAgent: {fileID: 0}
   wayPointList: []
   nextWayPoint: 0
@@ -669,6 +673,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1219304357 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400004, guid: d027af1092f6b434090f040565e7e656,
+    type: 3}
+  m_PrefabInternal: {fileID: 771675185}
 --- !u!1001 &1414863434
 Prefab:
   m_ObjectHideFlags: 0
@@ -907,6 +916,9 @@ MonoBehaviour:
   enemyStats: {fileID: 11400000, guid: 66f38c5b733f64e769a719b97b18299e, type: 2}
   eyes: {fileID: 0}
   remainState: {fileID: 0}
+  wayPoints:
+  - {fileID: 1690895826}
+  - {fileID: 1021442495}
   navMeshAgent: {fileID: 0}
   wayPointList: []
   nextWayPoint: 0
@@ -953,6 +965,57 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 40, y: 20, z: 30}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1001 &1690895825
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400004, guid: d027af1092f6b434090f040565e7e656, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: d027af1092f6b434090f040565e7e656, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: d027af1092f6b434090f040565e7e656, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: d027af1092f6b434090f040565e7e656, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: d027af1092f6b434090f040565e7e656, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: d027af1092f6b434090f040565e7e656, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: d027af1092f6b434090f040565e7e656, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: d027af1092f6b434090f040565e7e656, type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: d027af1092f6b434090f040565e7e656, type: 3}
+      propertyPath: m_Name
+      value: Palm_Desktop (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d027af1092f6b434090f040565e7e656, type: 3}
+  m_IsPrefabAsset: 0
+--- !u!4 &1690895826 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400004, guid: d027af1092f6b434090f040565e7e656,
+    type: 3}
+  m_PrefabInternal: {fileID: 1690895825}
 --- !u!1001 &1876360262
 Prefab:
   m_ObjectHideFlags: 0
@@ -1016,7 +1079,8 @@ Prefab:
       propertyPath: m_Radius
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114494760273807654, guid: ad28c64829004fa4487aa67c7c6e0e5e, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: ad28c64829004fa4487aa67c7c6e0e5e, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1001 &1917521660
@@ -1061,3 +1125,8 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d027af1092f6b434090f040565e7e656, type: 3}
   m_IsPrefabAsset: 0
+--- !u!4 &2057658495 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400004, guid: d027af1092f6b434090f040565e7e656,
+    type: 3}
+  m_PrefabInternal: {fileID: 1917521660}

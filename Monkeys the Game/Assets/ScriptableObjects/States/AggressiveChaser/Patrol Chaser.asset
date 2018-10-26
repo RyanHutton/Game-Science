@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Name: Patrol Chaser
   m_EditorClassIdentifier: 
   actions:
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 5a0c0d72af9fc419b921d505edfb84b5, type: 2}
   transitions: []
   sceneGizmoColor: {r: 0.11111466, g: 0.9245283, b: 0.06541473, a: 1}
