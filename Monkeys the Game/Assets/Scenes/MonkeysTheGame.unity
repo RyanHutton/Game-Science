@@ -224,11 +224,30 @@ MonoBehaviour:
   - {fileID: 2057658495}
   - {fileID: 1219304357}
   - {fileID: 1690895826}
-  navMeshAgent: {fileID: 0}
+  navMeshAgent: {fileID: 223379186}
   wayPointList: []
   nextWayPoint: 0
   chaseTarget: {fileID: 0}
   stateTimeElapsed: 0
+--- !u!195 &223379186 stripped
+NavMeshAgent:
+  m_CorrespondingSourceObject: {fileID: 195641940736088220, guid: ad28c64829004fa4487aa67c7c6e0e5e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1876360262}
+--- !u!114 &223379192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 223379183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34d910df58df62e42aa9208e4a910063, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 534669904}
+  target: {fileID: 0}
+  agent: {fileID: 223379186}
 --- !u!1 &534669902
 GameObject:
   m_ObjectHideFlags: 0
